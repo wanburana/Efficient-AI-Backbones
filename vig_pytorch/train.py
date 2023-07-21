@@ -543,7 +543,7 @@ def main():
         if not os.path.isdir(eval_dir):
             _logger.error('Validation folder does not exist at: {}'.format(eval_dir))
             exit(1)
-    dataset_eval = Dataset(eval_dir)
+    dataset_eval = ImageDataset(eval_dir)
 
     loader_eval = create_loader(
         dataset_eval,
